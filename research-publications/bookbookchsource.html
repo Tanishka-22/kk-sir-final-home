@@ -48,26 +48,31 @@
       <div class="Navigation">
         <div id="NavButtonsContainer" class="sticky">
           <a href="index.html"><div id="navbuts">Home</div></a><label  style="font-size: 20px; font-stretch: 100%; font-weight: 200" >|</label>
-          <div class="dropdown">
-            <a href="#" class="dropdown-toggle"><div id="navbuts">Research & Publications</div></a>
-            <ul class="dropdown-menu">
-              <li><a href="research-publications.html">Book and book chapters</a></li>
-              <li><a href="international.html">International journals</a></li>
-              <li><a href="#">Patents</a></li>
-              <li><a href="#">External projects and PhD supervision</a></li>
-              <li><a href="#">Pg projects and research supervision</a></li>
-            </ul>
-          </div><label style="font-size: 19px; font-weight: 300;" >|</label>
+         <!-- dropdown -->
+         <a href="#"><div id="navbuts" data-dropdown-button>Research & Publications  
+          <img id="arrow" src="images/expand_more_FILL0_wght400_GRAD0_opsz48.png" alt=""></div></a>
+        <div id="dropmeow" data-visible="X" data-dropdown >
+          <ul >
+            <li id="droppers"><a href="bookbookchsource.html">Book and book chapters</a></li>
+            <li id="droppers"><a href="international.html">International journals</a></li>
+            <li id="droppers"><a href="patents.html">Patents</a></li>
+            <li id="droppers"><a href="extproject.html">External projects and PhD supervision</a></li>
+            <li id="droppers"><a href="pgproject.html">Pg projects and research supervision</a></li>
+          </ul>
+        </div>
+        <label  style="font-size: 20px; font-stretch: 50%; font-weight: 200;" >|</label>
+        <!-- dropdown end-->
           <a href="#"><div id="navbuts">Media</div></a><label style="font-size: 21px; font-stretch: 50%; font-weight: 200;" >|</label>
           <a href="#"><div id="navbuts">Lab Resources</div></a><label style="font-size: 20px; font-stretch: 50%; font-weight: 200;" >|</label>
           <a href="#"><div id="navbuts">Research Collaborative Group</div></a><label style="font-size: 20px; font-stretch: 50%; font-weight: 200;" >|</label>
           <a href="#"><div id="navbuts">Social Activities</div></a><label style="font-size: 20px; font-stretch: 50%; font-weight: 200;" >|</label>
-          <a href="#"><div id="navbuts">Contact</div>
+          <a href="#"><div id="navbuts">Contact</div></a>
 
         </div>
       </div>
       <hr id="hr">
-      <div class="landing-divs" style="z-index: -999;">
+      <div class="landing-divs" style="z-index: -999;"></div>
+      </header>
    <!--??--------------------------------------------- Main content ----------------------------------------------->
     
     <main>
@@ -98,17 +103,6 @@
    
         
     <!-------------YAHA LIKHNE CODES------------------------------>
-        
-                  
-
-    <!--?--------------------------------------------- Profile Section ----------------------------------------------->
-     </a><br><br>
-                        
-                        </p>
-                      </div>
-                </div>
-        </div>
-      </section>
       <!--?--------------------------------------------- Footer ----------------------------------------------->
     <footer id="footer">
       <div><img  width="40px" src="https://professorsite1.netlify.app/Images/pin_drop_FILL0_wght400_GRAD0_opsz48.png" alt="">
@@ -127,7 +121,7 @@
       </div>
        <div><img width="40px"  src="https://professorsite1.netlify.app/Images/link_FILL0_wght400_GRAD0_opsz48.png" alt="">
       <h3>Connect</h3>
-      <div id="logos">
+      <div id="footlogos">
         <div><a href="#"><img src="logosfooter\fb.png" alt="" /></a></div>
         <div><a href="#"><img src="logosfooter\insta.png" alt="" /></a></div>
         <div><a href=""><img src="logosfooter\linkedin.png" alt="" /></a></div>
@@ -141,3 +135,4 @@
 </html>
 <script src="js/index.js"></script>
 <script src="js/book.js"></script>
+<script src="js/common.js"></script>
