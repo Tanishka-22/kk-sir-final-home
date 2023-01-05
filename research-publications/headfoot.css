@@ -6,7 +6,8 @@
 }
 body {
   background-image: url("istockphoto-16.jpg") !important;
-  background-size: 100% 100% !important;
+  background-size: cover;
+
   background-repeat: no-repeat;
 }
 .test {
@@ -25,6 +26,9 @@ section {
 a,
 a:hover {
   text-decoration: none;
+}
+main {
+  min-height: 1000px;
 }
 
 /*? <!----------------------------------------------- < Landing Page > -----------------------------------------------> */
@@ -315,9 +319,13 @@ ul {
   padding: 10px 30px;
 }
 /*? <!----------------------------------------------- < Footer > -----------------------------------------------> */
+html {
+  position: relative;
+}
 #footer {
+  position: absolute;
+  bottom: 0px;
   margin: 0px;
-  margin-top: 0px;
   background: rgba(170, 161, 161, 0.559);
   min-height: 200px;
   width: 100% !important ;
