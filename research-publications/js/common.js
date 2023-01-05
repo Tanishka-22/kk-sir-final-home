@@ -6,7 +6,7 @@ document.addEventListener("click", (e) => {
   console.log(dropmeow.dataset.visible);
   if (!ddbtn) {
     dropmeow.style.display = "none";
-    dropmeow.dataset.visible == "X";
+    dropmeow.dataset.visible = "X";
   } else {
     if (dropmeow.dataset.visible == "Y") {
       dropmeow.style.display = "none";

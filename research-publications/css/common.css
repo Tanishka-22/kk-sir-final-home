@@ -46,8 +46,9 @@ a {
 #arrow {
   filter: invert();
   width: 20px;
+  transform: rotateZ(180deg);
 }
 #droppers:hover {
   transform: scale(1.02);
-  background-color: #fdfdfd;
+  background-color: rgb(235, 253, 255);
 }
