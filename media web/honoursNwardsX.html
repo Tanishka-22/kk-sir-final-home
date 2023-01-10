@@ -7,9 +7,7 @@
     <title>Project Professor</title>
     <link rel="stylesheet" href="css/headfoot.css" />
     <link rel="stylesheet" href="css/common.css"/>
-    <link rel="stylesheet" href="css/bookbookch.css"/>
-   
-
+  <link rel="stylesheet" href="css/honours.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -76,9 +74,82 @@
       <!--------------------------------landing page-------------------------------------------------------------->
       
 
+<center><h1>HONOURS AND AWARDS</h1></center>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="image/pic1.jfif" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="image/pic1.jfif" style="width:100%">
+    </div>
+
+
+</div>
+<br><br><br><br>
+<!--??--------------------------------------------- <Text > ----------------------------------------------->
+    <div id="text-para">
+      
+        <p align="justify">
+            I have expressed my interests in a vast number of areas of physics and one such interest in Nanotechnology
+            resulted in me securing some positions such as sixth place 3rd Nanotechnology Virtual Nano Poster
+            Conference,
+            <ul>
+              <li> Nanopaprika, Budapest, Hungary, 22 sep. 2013 and second place in the consecutive year.</li>
+              <li> Certain participation also helped me bag second position in Poster presentation at National science day
+                celebration-2012 organized by M.P. Council of Science & Technology at University level.</li>
+              <li>And secured Ist Rank in Pre Ph.D. Physics Examination at University teaching 
+                department according to UGC regulation 2009.</li>
+              <li> I was awarded Certificate of Excellence in Vidhan-sabha and Lok Sabha Election -2013, 
+                2014 and 2018 by Collector, Jabalpur and certificate of appreciation for Best reviewer for ICE POE  2019.</li>
+              <li>I worked as Resource person in Anveshika Vigyan Prasar Yojana running by Prof. </li>
+              <li>H. C. Verma IIT Kanpur and as lecturer by rotation in BOS OF APPLIED PHYSICS at State level for RGPV Bhopal
+                MP.
+          </li>
+          <li> I was conferred with “BEST TEACHER AWARD” on 26 Jan 2007 by Malwa Institute of Technology. </li>
+          <li>     Through the length of my on-going career, my involvements and engagement in a vast number of organisations
+            andevents, i received certificates such as</li>
+            </ul>
+           
+           
+            
+            
+
+            
+
+            
+           
 
 
 
+       
+
+            -Certificate of Appreciation by Dr. Harisingh Gour University, Central University, Sagar for Conference
+            Poster/
+            oral evaluation
+
+            -Certificate of Appreciation by IIT Indore for conduction for Pre Conference
+
+            -Certificate of Excellence by Principal Jabalpur Engg. College on 26 Jan. 2022.
+
+            -Certificate of Excellence by Collector Jabalpur on 25 Jan. 2022
+
+            - Working as Head of Department, Applied Physics, Jabalpur Engineering College, 
+
+            Jabalpur, MP
+
+            -Excellent certificate in Mooc course by IIT Kanpur.
+        </p>
+    </div>
+    <br><br><br>
+    <div id="end-line">
+      <p align="justify">
+          26 जनवरी 2019, भारत महापर्व को शहीद स्मारक जबलपुर में विधानसभा निर्वाचन 2018 में उत्कृष्ट कार्य के लिए
+          जबलपुर
+          जिले की कलेक्टर मैडम छवि भारद्वाज के द्वारा सम्मानित किया गया। आदरणीय कलेक्टर मैडम एवम प्रशासन को धन्यवाद।
+      </p>
+  </div>
       <!----------------------------------------------------footer------------------------------------------------->
       <div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -112,4 +183,38 @@
   </body>
   </notprettier>
 </html>
-<script src="js/index.js"></script>
+<script src="common.js"></script>
+
+
+
+<script>
+    var slideshowContainers = document.getElementsByClassName("slideshow-container");
+    /* For each container get starting variables */
+    for (let s = 0; s < slideshowContainers.length; s++) {
+        /* Read the new data attribute */
+        var cycle = 4000;
+        /* Find all the child nodes with class mySlides */
+        var slides = slideshowContainers[s].querySelectorAll('.mySlides');
+        var slideIndex = 0;
+        /* Now we can cycle slides, but this recursive function must have parameters */
+        /* slides and cycle never change, those are unique for each slide container */
+        /* slideIndex will increase during each iteration */
+        showSlides(slides, slideIndex, cycle);
+    };
+    9
+    /* Function is alsmost same, but now it uses 3 new parameters */
+    function showSlides(slides, slideIndex, cycle) {
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        };
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        };
+        slides[slideIndex - 1].style.display = "block";
+        /* Calling same function, but with new parameters and cycle time */
+        setTimeout(function () {
+            showSlides(slides, slideIndex, cycle)
+        }, cycle);
+    };
+</script>
