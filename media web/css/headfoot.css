@@ -20,10 +20,11 @@ body {
   margin: 20px auto;
   min-height: 500px;
 }
-
-div,section {
-    border: 1px solid black;
-  } 
+/* 
+div,
+section {
+  border: 1px solid black;
+} */
 
 section {
   margin: 300px auto;
